@@ -1,13 +1,15 @@
 package com.example.cardapio.food;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import org.springframework.boot.autoconfigure.web.WebProperties;
 
 @Table(name = "food")
 @Entity(name = "food")
 public class Food {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
     private String image;
+    private Integer price;
 
 }
