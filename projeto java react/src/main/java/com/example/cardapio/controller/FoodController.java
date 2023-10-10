@@ -22,4 +22,11 @@ public class FoodController {
 
     }
 
+    public FoodRepository getRepository() {
+        return repository;
+    }
+
+    public void setRepository(FoodRepository repository) {
+        this.repository = repository;
+    }
 }
